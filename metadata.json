@@ -1,0 +1,6 @@
+{
+  "name": "Emerald Elegance Wedding",
+  "description": "A luxurious and magically animated wedding invitation featuring a green marble aesthetic, personalized letter, and interactive elements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
