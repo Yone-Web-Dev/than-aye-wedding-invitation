@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react';
 import { MapPin, Map as MapIcon } from 'lucide-react';
-import { VENUE_LAT, VENUE_LNG, VENUE_MAPS_URL, VENUE_MAP_QUERY } from '../config';
+import { VENUE_LAT, VENUE_LNG, VENUE_MAPS_URL } from '../config';
 
-const MAP_EMBED_URL = `https://maps.google.com/maps?q=${encodeURIComponent(VENUE_MAP_QUERY)}&hl=en&z=17&output=embed`;
+const MAP_EMBED_URL = `https://maps.google.com/maps?q=${VENUE_LAT},${VENUE_LNG}&hl=en&z=17&output=embed`;
 
 const GoogleMapView = lazy(() => import('./GoogleMapView'));
 

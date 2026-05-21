@@ -37,13 +37,13 @@ export const VENUE_ADDRESS = "R46M+63W, Kyun Taw Rd, Yangon, Myanmar";
 export const VENUE_DESCRIPTION =
   "A sacred and joyful gathering at Ashin Uttamasara Monastery on Kyun Taw Road, Sanchaung, Yangon.";
 
-// Google Maps — https://maps.app.goo.gl/AvhdrSucf19PF3oX7 (R46M+63W, Kyun Taw Rd)
-export const VENUE_MAPS_URL = "https://maps.app.goo.gl/AvhdrSucf19PF3oX7";
+// Google Maps — https://maps.app.goo.gl/Aky6DCH9SZREF13K9 (R46M+63W, Kyun Taw Rd)
+export const VENUE_MAPS_URL = "https://maps.app.goo.gl/Aky6DCH9SZREF13K9";
 /** Used for embedded map search — matches your Plus Code pin */
 export const VENUE_MAP_QUERY = "R46M+63W, Kyun Taw Rd, Yangon, Myanmar";
-/** Map center (R46M+63W area on Kyun Taw Rd — not the old R46M+754 pin) */
-export const VENUE_LAT = 16.8087;
-export const VENUE_LNG = 96.1315;
+/** Map center — exact coordinates from Google Maps listing */
+export const VENUE_LAT = 16.8106238;
+export const VENUE_LNG = 96.1327049;
 
 // ─────────────────────────── PARENTS ─────────────────────────────
 // Groom's side
