@@ -159,8 +159,6 @@ export default function MainInvite({ guestName }: MainInviteProps) {
         </motion.div>
       </section>
 
-      <CountdownTimer />
-
       {/* Parents Section */}
       <section className="py-16 sm:py-24 md:py-32 px-4 bg-emerald-deep relative overflow-hidden border-t border-gold/10">
          <div className="absolute inset-0 opacity-[0.2] pointer-events-none marble-bg"></div>
@@ -210,6 +208,64 @@ export default function MainInvite({ guestName }: MainInviteProps) {
             </div>
          </div>
       </section>
+
+      {/* Couple Invitation Photo Section */}
+      <section className="py-16 sm:py-24 md:py-32 px-4 bg-emerald-deep relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.15] pointer-events-none marble-bg"></div>
+        <div className="absolute right-4 sm:right-10 bottom-20 text-gold/5 rotate-12 animate-float hidden sm:block">
+          <Leaf size={120} strokeWidth={0.2} />
+        </div>
+
+        <div className="max-w-3xl mx-auto text-center space-y-8 sm:space-y-12 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="space-y-3 sm:space-y-4"
+          >
+            <div className="flex items-center justify-center gap-4 sm:gap-6">
+              <div className="h-px flex-1 bg-gold/10"></div>
+              <Heart className="text-gold/30" size={22} strokeWidth={1} />
+              <div className="h-px flex-1 bg-gold/10"></div>
+            </div>
+            <p className="font-display text-[10px] text-gold/60 tracking-[0.4em] uppercase">Together in Love</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+            className="flex justify-center"
+          >
+            <div className="couple-photo-frame max-w-lg sm:max-w-xl md:max-w-2xl">
+              <div className="couple-photo-inner">
+                <img
+                  src="/photos/couple-invitation.jpg"
+                  alt={`${GROOM_FIRST} & ${BRIDE_FIRST} — Wedding Invitation`}
+                  className="w-full h-auto"
+                />
+                <div className="couple-photo-shimmer"></div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="space-y-2"
+          >
+            <p className="font-serif italic text-lg sm:text-xl text-stone-400/80 leading-relaxed max-w-md mx-auto px-2">
+              "Two souls, one journey — united by love, blessed by grace."
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      <CountdownTimer />
 
       {/* Venue & Location Section */}
       <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-8 bg-black/20 text-white relative border-y border-gold/10">

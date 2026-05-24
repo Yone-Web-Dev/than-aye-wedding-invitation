@@ -12,7 +12,7 @@
  */
 
 // ─────────────────────────── COUPLE ──────────────────────────────
-export const GROOM_FIRST  = "Mr. Than Tun Aung";
+export const GROOM_FIRST  = "Mr. Than Htun Aung";
 export const BRIDE_FIRST  = "Ms. Aye Kyi Kyi Ko";
 
 // ──────────────────────── WEDDING DATE ───────────────────────────
